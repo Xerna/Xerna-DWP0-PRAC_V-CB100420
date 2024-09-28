@@ -1,0 +1,24 @@
+<p>Calculadora</p>
+<h1>One Way Binding</h1>
+
+<p>Number 1: </p>
+<input type="text" (keyup)="pressKey($event)">
+
+<p>Number 2: </p>
+<input type="text" (keyup)="pressKey($event)">
+
+
+<h1>Two Way Binding</h1>
+
+<p>Number 1: </p>
+<input type="number" [(ngModel)]="num1">
+
+<p>Number 2: </p>
+<input type="number" [(ngModel)]="num2">
+
+<button (click)="sum()">Sum</button>
+<br>
+Result: {{resultado}}
+
+<p>El primer numero ingresado fue:{{num1}}</p>
+<p>El segundo numero ingresado fue:{{num2}}</p>
